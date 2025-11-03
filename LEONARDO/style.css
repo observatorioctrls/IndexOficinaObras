@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-ascii pre {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex: 1;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    letter-spacing: 2px;
+}
+
+.author {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #00aa00;
+}
+
+.author-name {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00ff00;
+    border-bottom: 1px solid #00aa00;
+    padding-bottom: 5px;
+}
+
+.concept-text {
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #00cc00;
+}
+
+.access-section {
+    margin-top: 30px;
+}
+
+.access-button {
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 12px 24px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.access-button:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 15px #00ff00;
+    transform: translateY(-2px);
+}
+
+.access-button:active {
+    transform: translateY(0);
+}
+
+.button-text {
+    font-weight: bold;
+}
+
+.button-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.access-button:hover .button-icon {
+    transform: translateX(5px);
+}
+
+
+.terminal-preview {
+    flex: 1;
+    min-width: 300px;
+}
+
+.terminal-container {
+    background-color: #000;
+    border: 1px solid #00aa00;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.terminal-header {
+    background-color: #003300;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00aa00;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.control.close {
+    background-color: #ff5f56;
+}
+
+.control.minimize {
+    background-color: #ffbd2e;
+}
+
+.control.maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    font-size: 0.9rem;
+    color: #00ff00;
+}
+
+.terminal-body {
+    padding: 15px;
+    min-height: 200px;
+}
+
+.terminal-output {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.output-line {
+    margin-bottom: 5px;
+    color: #00ff00;
+}
+
+.typing-text {
+    color: #00ff00;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+    color: #00ff00;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+
+.footer {
+    margin-top: auto;
+    border-top: 1px solid #00aa00;
+    padding-top: 15px;
+}
+
+.monitoring-log {
+    font-size: 0.8rem;
+    color: #00aa00;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.log-time {
+    font-weight: bold;
+}
+
+.log-module {
+    color: #00ff00;
+}
+
+.log-message {
+    color: #00cc00;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .logo-ascii pre {
+        font-size: 8px;
+    }
+    
+    .project-name {
+        font-size: 2rem;
+    }
+    
+    .monitoring-log {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .log-separator {
+        display: none;
+    }
+}
+
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 #00ff00, -0.05em -0.025em 0 #ff0000, -0.025em 0.05em 0 #0000ff;
+    }
+    14% {
+        text-shadow: 0.05em 0 0 #00ff00, -0.05em -0.025em 0 #ff0000, -0.025em 0.05em 0 #0000ff;
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 #00ff00, 0.025em 0.025em 0 #ff0000, -0.05em -0.05em 0 #0000ff;
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 #00ff00, 0.025em 0.025em 0 #ff0000, -0.05em -0.05em 0 #0000ff;
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 #00ff00, 0.05em 0 0 #ff0000, 0 -0.05em 0 #0000ff;
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 #00ff00, 0.05em 0 0 #ff0000, 0 -0.05em 0 #0000ff;
+    }
+    100% {
+        text-shadow: -0.025em 0 0 #00ff00, -0.025em -0.025em 0 #ff0000, -0.025em -0.05em 0 #0000ff;
+    }
+}
+
+.project-name:hover {
+    animation: glitch 0.5s infinite;
+}

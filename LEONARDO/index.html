@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent(e) - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-ascii">
+                <pre>█████╗  ██████╗ ███████╗███╗   ██╗████████╗[███████╗]
+██╔══██╗██╔════╝ ██╔════╝████╗  ██║╚══██╔══╝[██╔════╝]
+███████║██║  ███╗█████╗  ██╔██╗ ██║   ██║   [█████╗  ]
+██╔══██║██║   ██║██╔══╝  ██║╚██╗██║   ██║   [██╔══╝  ]
+██║  ██║╚██████╔╝███████╗██║ ╚████║   ██║   [███████╗]
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝   [╚══════╝]</pre>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="project-info">
+                <h1 class="project-name">Agent(e)</h1>
+                <div class="author">por <span class="author-name">Leonardo Araujo</span></div>
+                
+                <div class="concept-section">
+                    <h2 class="section-title">Conceito Geral</h2>
+                    <p class="concept-text">
+                        Agent(e) se trata de uma projeto que busca questionar a utilização de Big Data principalmente por empresas a partir da visão de que estamos sendo “registrados” a todo momento por algoritmos, transformando nossas atividade cotidianas em mercadoria informacional.
+O projeto por sua vez busca demonstrar algumas questões e fatos históricos que nos trazem até esse momento, se dando através da interação do usuário com o “Terminal” que compõe o projeto. Busca-se também gerar desconforto através da sensação de observação através de informações apresentadas pelo projeto.
+
+                    </p>
+                </div>
+                
+                <div class="access-section">
+                    <button id="accessButton" class="access-button">
+                        <span class="button-text">Acessar o Projeto</span>
+                        <span class="button-icon">→</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="terminal-preview">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="terminal-title">terminal@agent:~$</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output">
+                            <div class="output-line">Agent(e) Search Engine v1.0.0</div>
+                            <div class="output-line">Bem-vindo ao sistema de busca preditiva</div>
+                            <div class="output-line">Digite 'help' para ver os comandos disponíveis</div>
+                            <div class="output-line"></div>
+                            <div class="output-line">user@agent:~$ <span class="typing-text"></span><span class="cursor">_</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="monitoring-log">
+                <span class="log-time" id="logTime">14:03:12</span>
+                <span class="log-separator">|</span>
+                <span class="log-module" id="logModule">tracking.module</span>
+                <span class="log-separator">|</span>
+                <span class="log-message" id="logMessage">nova intenção detectada: "dúvida disfarçada de busca"</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
