@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             alert('Redirecionando para o projeto Agent(e)...');
-            window.location.href = 'https://leonardo-agent-e-git-main-observatorio-ctrl-s-projects.vercel.app'; 
+            window.location.href = 'https://leonardo-agent-e.vercel.app/'; 
             this.disabled = false;
             this.style.transform = '';
         }, 1500);
@@ -119,4 +119,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
     setInterval(randomGlitch, Math.random() * 20000 + 10000);
+
 });
