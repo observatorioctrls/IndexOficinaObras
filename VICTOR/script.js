@@ -1,5 +1,6 @@
 
 function acessarProjeto() {
     alert('Acessando o projeto...');
-    window.location.href = 'projeto.html';
+    window.location.href = 'https://victor-ufscologia.vercel.app/';
 }
+
